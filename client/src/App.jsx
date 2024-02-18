@@ -11,13 +11,17 @@ import Contact from "./pages/Contact";
 export default function App() {
   return (
     <BrowserRouter>
-      <Head />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/listing" element={<Listing />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Head />
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/listing" element={<Listing />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
