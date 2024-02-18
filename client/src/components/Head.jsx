@@ -28,7 +28,7 @@ export default function Head() {
               </span>
             </li>
           </Link>
-          <Link to="/">
+          <Link to="contact">
             <li className="text-blue-400 text-sm sm:text-xl group">
               <span className="relative inline-block">
                 Contact
