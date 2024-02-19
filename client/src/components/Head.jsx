@@ -23,7 +23,7 @@ export default function Head() {
               </span>
             </li>
           </Link>
-          <Link to="/listing">
+          <Link to="/listings">
             <li className="text-blue-400 text-sm sm:text-xl group">
               <span className="relative inline-block">
                 Playground
