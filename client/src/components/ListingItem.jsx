@@ -1,5 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ListingItem() {
-  return <div>ListingItem</div>;
+  return <div>item</div>;
 }

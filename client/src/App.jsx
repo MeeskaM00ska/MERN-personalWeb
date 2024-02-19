@@ -6,6 +6,7 @@ import Head from "./components/Head";
 //pages
 import Home from "./pages/Home";
 import Listing from "./pages/Listing";
+import Listings from "./pages/Listings";
 import Contact from "./pages/Contact";
 import CreateListing from "./pages/CreateListing";
 
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/listing" element={<Listing />} />
+            <Route path="/listings" element={<Listings />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/createListing" element={<CreateListing />} />
           </Routes>

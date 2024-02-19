@@ -3,6 +3,7 @@ import listingRouter from "./routes/listing.route.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
+import cookieParser from "cookie-parser";
 
 mongoose
   .connect(process.env.MONGO)
@@ -17,6 +18,8 @@ const app = express();
 
 app.use(express.json());
 
+app.use(cookieParser());
+
 app.use("/api/listing", listingRouter);
 
 app.listen(8080, () => {
@@ -25,7 +28,7 @@ app.listen(8080, () => {
 
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
-  const errMessage = err.message || "internal server error";
+  const message = err.message || "internal server error";
   return res.status(statusCode).json({
     success: false,
     statusCode,
