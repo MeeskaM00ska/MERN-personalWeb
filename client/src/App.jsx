@@ -7,7 +7,7 @@ import Head from "./components/Head";
 import Home from "./pages/Home";
 import Listing from "./pages/Listing";
 import Listings from "./pages/Listings";
-import Contact from "./pages/Contact";
+import ContactPage from "./pages/ContactPage";
 import CreateListing from "./pages/CreateListing";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/listing" element={<Listing />} />
             <Route path="/listings" element={<Listings />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/createListing" element={<CreateListing />} />
           </Routes>
         </div>

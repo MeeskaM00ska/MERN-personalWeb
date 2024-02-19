@@ -6,7 +6,7 @@ export default function Head() {
     <header className="shadow-md">
       <div className="flex flex-wrap justify-between p-5 items-center mx-auto max-w-5xl">
         <Link to="/">
-          <h1 className="font-bold text-sm sm:text-3xl flex flex-col hover:scale-105 transition-all duration-500 ease-out">
+          <h1 className="font-bold text-sm sm:text-3xl flex flex-col hover:scale-105 transition-all duration-500 ease-out animate-pulse">
             <span>Nathan's</span>
             <span className="text-slate-500">Website</span>
           </h1>
