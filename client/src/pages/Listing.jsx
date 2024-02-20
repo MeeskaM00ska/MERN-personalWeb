@@ -1,5 +1,8 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 export default function Listing() {
-  return <div>Listing</div>;
+  const params = useParams();
+
+  return <div>Listing with id: {params.listingId}</div>;
 }

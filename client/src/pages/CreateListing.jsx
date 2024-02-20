@@ -22,6 +22,8 @@ export default function CreateListing() {
     startDate: "",
     endDate: "",
     tools: "",
+    projectUrl: "",
+    githubUrl: "",
     imageUrls: [],
   });
 
@@ -171,6 +173,22 @@ export default function CreateListing() {
             required
             onChange={handleChange}
             value={formData.tools}
+          />
+          <input
+            type="text"
+            placeholder="projectUrl"
+            id="projectUrl"
+            required
+            onChange={handleChange}
+            value={formData.projectUrl}
+          />
+          <input
+            type="text"
+            placeholder="githubUrl"
+            id="githubUrl"
+            required
+            onChange={handleChange}
+            value={formData.githubUrl}
           />
         </div>
         <div className="flex flex-col gap-4 flex-1">

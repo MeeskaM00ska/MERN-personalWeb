@@ -22,6 +22,14 @@ const listingSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    projectUrl: {
+      type: String,
+      required: true,
+    },
+    githubUrl: {
+      type: String,
+      required: true,
+    },
     imageUrls: {
       type: Array,
       required: true,

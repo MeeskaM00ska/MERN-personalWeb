@@ -18,7 +18,7 @@ export default function App() {
         <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/listing" element={<Listing />} />
+            <Route path="/listing/:listingId" element={<Listing />} />
             <Route path="/listings" element={<Listings />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/createListing" element={<CreateListing />} />
