@@ -12,9 +12,9 @@ export default function Head() {
           </h1>
         </Link>
         <ul className="flex flex-wrap gap-4">
-          <Link to="/createListing">
+          {/* <Link to="/createListing">
             <li>create listing</li>
-          </Link>
+          </Link> */}
           <Link to="/">
             <li className="text-blue-400 text-sm sm:text-xl group">
               <span className="relative inline-block">

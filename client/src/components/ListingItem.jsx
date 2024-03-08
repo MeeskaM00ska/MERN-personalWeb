@@ -30,11 +30,11 @@ export default function ListingItem({ listing }) {
               {listing.endDate}
             </span>
           </div>
-          <div className="flex flex-row flex-wrap items-center gap-2">
+          <div className="flex flex-1 items-center gap-2">
             <LuCode2 />
-            <p className="text-sm text-gray-600 line-clamp-2">
+            <span className="text-sm text-blue-400 line-clamp-2">
               {listing.tools}
-            </p>
+            </span>
           </div>
         </div>
       </Link>

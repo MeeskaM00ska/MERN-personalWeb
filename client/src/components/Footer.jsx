@@ -9,7 +9,7 @@ export default function Footer() {
   const currentDate = new Date().getDate();
   return (
     <footer className="text-center mt-auto footer">
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mt-3">
         <ul className="flex gap-3 items-center justify-center">
           <a
             href="https://www.linkedin.com/in/mingyang-li-6107352a2"
